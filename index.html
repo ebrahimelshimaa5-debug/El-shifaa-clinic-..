@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El-Shifaa Specialized Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="clinic-header">
+        <div class="avatar-container">
+            <img src="https://unsplash.com" alt="Doctor Avatar" class="doctor-avatar">
+        </div>
+        <h1>El-Shifaa Specialized Clinic</h1>
+        <p class="subtitle">Advanced Healthcare System with a Creative Touch</p>
+        
+        <nav class="clinic-nav">
+            <a href="#exterior">Exterior & Garden</a>
+            <a href="#rooms">Rooms & Beds</a>
+            <a href="#services">Services</a>
+            <a href="#doctors">Doctors & Schedule</a>
+            <a href="#registration">Patient Registration & Appointment</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Exterior Section -->
+        <section id="exterior" class="card">
+            <h2>Clinic Exterior & Custom Image Upload</h2>
+            <p>Welcome to <strong>El-Shifaa Clinic</strong>. View the current exterior or upload your own clinic photo!</p>
+            <div class="image-preview-box">
+                <img id="display-image" src="https://unsplash.com" alt="Clinic Exterior" class="responsive-img">
+            </div>
+            <div class="upload-control">
+                <label for="image-upload" class="upload-btn">Upload Your Own Clinic/Garden Photo:</label>
+                <input type="file" id="image-upload" accept="image/*">
+            </div>
+        </section>
+
+        <!-- Facilities Section -->
+        <section id="rooms" class="card">
+            <h2>Medical Facilities, Examination Rooms & Beds</h2>
+            <div class="grid-gallery">
+                <div class="gallery-item">
+                    <img src="https://unsplash.com" alt="Medical Beds" class="responsive-img">
+                    <h3>Medical Examination Beds</h3>
+                    <p>Clean, modern, and adjustable patient beds designed for maximum comfort.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://unsplash.com" alt="Reception" class="responsive-img">
+                    <h3>Waiting & Reception Hall</h3>
+                    <p>Calm and spacious seating areas for patients and visitors.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="card">
+            <h2>Medical Departments & Services</h2>
+            <ul class="services-list">
+                <li><strong>Pediatrics Department:</strong> Comprehensive child healthcare in a calm environment.</li>
+                <li><strong>Obstetrics & Gynecology:</strong> Consultations and periodic follow-ups with advanced tech.</li>
+                <li><strong>Internal Medicine:</strong> Expert diagnosis and management of conditions.</li>
+            </ul>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="doctors" class="card">
+            <h2>Our Specialized Doctors & Schedule</h2>
+            <div class="table-container">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Doctor ID</th>
+                            <th>Doctor Name</th>
+                            <th>Specialization</th>
+                            <th>Working Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>DOC01</strong></td>
+                            <td>Dr. Mary Abdullah</td>
+                            <td>Pediatrics</td>
+                            <td>09:00 AM - 02:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td><strong>DOC02</strong></td>
+                            <td>Dr. Lilian Ahmed</td>
+                            <td>Obstetrics & Gynecology</td>
+                            <td>10:00 AM - 03:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td><strong>DOC03</strong></td>
+                            <td>Dr. Ahmed Mahmoud</td>
+                            <td>Internal Medicine</td>
+                            <td>01:00 PM - 07:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- System Registration Form -->
+        <section id="registration" class="card form-card">
+            <h2>Comprehensive Patient & Appointment System</h2>
+            <form id="patient-form">
+                
+                <h3>1. Patient Personal Info</h3>
+                <div class="form-group">
+                    <label for="patient-id">Patient National ID / Unique MR No:</label>
+                    <input type="text" id="patient-id" placeholder="e.g., PAT1001" required>
+                </div>
+                <div class="form-group">
+                    <label for="patient-name">Full Name:</label>
+                    <input type="text" id="patient-name" placeholder="Enter full name..." required>
+                </div>
+                <div class="form-group">
+                    <label for="patient-dob">Date of Birth:</label>
+                    <input type="date" id="patient-dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="patient-phone">Phone Number:</label>
+                    <input type="tel" id="patient-phone" placeholder="Enter phone number..." required>
+                </div>
+                <div class="form-group">
+                    <label for="patient-address">Home Address:</label>
+                    <input type="text" id="patient-address" placeholder="Enter address..." required>
+                </div>
+
+                <h3>2. Appointment Details</h3>
+                <div class="form-group">
+                    <label for="doctor-select">Choose Doctor & Department:</label>
+                    <select id="doctor-select">
+                        <option value="DOC01">Dr. Mary Abdullah - Pediatrics</option>
+                        <option value="DOC02">Dr. Lilian Ahmed - Obstetrics</option>
+                        <option value="DOC03">Dr. Ahmed Mahmoud - Internal Medicine</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-id">Appointment ID (Unique Reference):</label>
+                    <input type="text" id="appointment-id" placeholder="e.g., APP2001" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-date">Appointment Date:</label>
+                    <input type="date" id="appointment-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-time">Appointment Time:</label>
+                    <input type="time" id="appointment-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="purpose">Purpose of Visit / Symptoms:</label>
+                    <textarea id="purpose" rows="3" placeholder="Enter medical details and symptoms..."></textarea>
+                </div>
+
+                <h3>3. Bill Generation</h3>
+                <div class="form-group">
+                    <label for="bill-id">Bill ID (Unique Reference):</label>
+                    <input type="text" id="bill-id" placeholder="e.g., BIL3001" required>
+                </div>
+                <div class="form-group">
+                    <label for="bill-amount">Consultation Amount ($ / EGP):</label>
+                    <input type="number" id="bill-amount" value="50" readonly required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-status">Payment Status:</label>
+                    <select id="payment-status">
+                        <option value="Paid">Paid Successfully</option>
+                        <option value="Unpaid">Unpaid / Pay at Clinic</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Process Full Transaction & Register 🌸</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="card">
+            <h2>Contact Us</h2>
+            <p>Email us at: <a href="mailto:info@elshifaclinic.com">info@elshifaclinic.com</a></p>
+        </section>
+    </main>
+
+    <footer class="clinic-footer">
+        <p>&copy; 2026 El-Shifaa Specialized Clinic. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
